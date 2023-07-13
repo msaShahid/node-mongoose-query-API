@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile PAge</title>
+</head>
+<body>
+    <h1>Profile Details</h1>
+    <h5>Welcome : <%= user.name %></h5>
+    <h5>Email : <%= user.email%></h5>
+    <h5>City : <%= user.city%></h5>
+    <ul>
+        <% user.skills.forEach((item) => { %>
+           <li> <%= item %></li>
+        <% }) %>
+    </ul>
+    
+</body>
+</html>
